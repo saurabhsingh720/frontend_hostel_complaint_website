@@ -22,7 +22,7 @@ function Login() {
           const registerForm = (e) => {
             e.preventDefault();
             try {
-              const res = axios.post("http://localhost:3001/api/v1/login", data)
+              const res = axios.post("https://backend-hostel-complaint-website.vercel.app/api/v1/login", data)
               .then((result) => {
                 if(result.data === "Success") {
                     toast.success(result.data);
