@@ -24,7 +24,7 @@ function Register() {
   const registerForm = (e) => {
     e.preventDefault();
     try {
-      const res = axios.post("https://backend-hostel-complaint-website.vercel.app/api/v1/register", data);
+      const res = axios.post("https://backend-hostel-complaint-website.onrender.com/api/v1/register", data);
       toast.success("Registered Successfully");
       navigate('/login');
       console.log(res);
