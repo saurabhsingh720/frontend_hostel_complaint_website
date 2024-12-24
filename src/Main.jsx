@@ -13,7 +13,7 @@ function Main() {
   useEffect(()=> {
     const fetchData = async() => {
       try {
-        const response = await axios.get('https://backend-hostel-complaint-website.vercel.app/api/v1/userIssue');
+        const response = await axios.get('https://backend-hostel-complaint-website.onrender.com/api/v1/userIssue');
         setUsers(response.data);
       } catch (error) {
         console.log("error in fetchdata", error)
