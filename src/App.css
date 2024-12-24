@@ -1,38 +1,405 @@
-.App {
-  text-align: center;
+#bg-register{
+
+  background-image: url('./campus.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#bg-issue{
+  background-image: url('./img2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#card-register{
+  background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(199, 227, 175);
+}
+
+.logout-button {
+  background: transparent;
+  color: #ff0000;
+  border: 2px solid #ff0000;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #ff0000;
+  color: #fff;
+}
+
+
+.dashboard-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.enquiries {
+  flex: 3;
+  margin-right: 1rem;
+}
+
+.enquiries h2,
+.profile h2 {
+  font-weight: bold;
+}
+
+.enquiries-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  color: #000; 
+  background: #fff;
+}
+
+.enquiries-table th, .enquiries-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+
+
+.footer-clean {
+  padding:50px 0;
+  background-color:#fff;
+  color:#4b4c4d;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+
+#icon{
+  margin: 1px;
+}
+
+#main-icon{
+  margin-bottom: 4px;
+}
+#main-container{
+  padding: 4px;
+  padding-bottom: 0;
+}
+#footer-icon{
+  background-color: lightcyan;
+  text-align: center;
+  font: white;
+}
+
+#map{
+  margin-top: 10px;
+}
+
+#footer-main{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#table #t1 #t2 #t3{
+  flex-wrap: wrap;
+}
+
+/* added css */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashboard {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.logout-button {
+  background-color: #ff5f5f;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.logout-button:hover {
+  background-color: #ff3d3d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+marquee h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Table Styles */
+.enquiries-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.enquiries-table th,
+.enquiries-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.enquiries-table th {
+  background-color: #f4f4f4;
+}
+
+.enquiries-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logout-button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  marquee h2 {
+    font-size: 1.2rem;
+  }
+
+  .enquiries-table {
+    font-size: 0.9rem;
+  }
+
+  .enquiries-table th,
+  .enquiries-table td {
+    padding: 8px;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  marquee h2 {
+    font-size: 1rem;
+  }
+
+  .enquiries-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .enquiries-table th,
+  .enquiries-table td {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* General Table Styles */
+.enquiries-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.enquiries-table th,
+.enquiries-table td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 10px;
+}
+
+.enquiries-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.enquiries-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .enquiries-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .enquiries-table th,
+  .enquiries-table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .enquiries-table {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    border: none;
+  }
+
+  .enquiries-table thead {
+    display: none;
+  }
+
+  .enquiries-table tbody tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  .enquiries-table tbody tr td {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border: none;
+  }
+
+  .enquiries-table tbody tr td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
   }
 }
