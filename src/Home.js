@@ -23,7 +23,7 @@ export function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
     try {
-      const res = axios.post("https://backend-hostel-complaint-website.vercel.app/api/v1/userIssue", data);
+      const res = axios.post("https://backend-hostel-complaint-website.onrender.com/api/v1/userIssue", data);
       toast.success("Issue created Successfully");
       console.log(res);
     } catch (err) {
